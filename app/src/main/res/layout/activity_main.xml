@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txtInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnOneShot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Shot Alarm"
+        android:onClick="oneShotAlarm"
+        android:layout_above="@+id/btnRepeatAlarm"
+        android:layout_alignLeft="@+id/btnRepeatAlarm"
+        android:layout_alignStart="@+id/btnRepeatAlarm"
+        android:layout_marginBottom="57dp" />
+    <Button
+        android:id="@+id/btnRepeatAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeating Alarm"
+        android:onClick="repeatAlarm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Repeating Alarm"
+        android:id="@+id/btnStopRepeatingAlarm"
+        android:onClick="stopRepeatingAlarm"
+        android:layout_alignTop="@+id/btnRepeatAlarm"
+        android:layout_alignLeft="@+id/btnRepeatAlarm"
+        android:layout_alignStart="@+id/btnRepeatAlarm"
+        android:layout_marginTop="75dp" />
+
+</RelativeLayout>
